@@ -1,0 +1,23 @@
+.hero-section {
+  height: 100vh; /* Full screen height */
+  padding-top: 70px; /* Offset the height of the navbar */
+  background-image: url("/public/images/travel-concept-close-up-portrait-young-beautiful-attractive-redhair-girl-wtih-trendy-hat-sunglass.jpg"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+}
