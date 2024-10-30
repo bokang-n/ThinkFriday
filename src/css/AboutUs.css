@@ -1,0 +1,39 @@
+/* AboutSection.css */
+
+.about {
+    padding: 2rem;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .imgWrapper img {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .contentWrapper .content {
+    max-width: 500px;
+  }
+  
+  .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .collapsable {
+    margin-top: 1rem;
+  }
+  
