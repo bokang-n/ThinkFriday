@@ -6,13 +6,9 @@ import coreImg from "../images/core_img.jpg";
 const CoreFeatures = () => {
   return (
     <section className="core" id="core">
-      <h1 className="heading">Outstanding Core Features of The Product</h1>
+      <h1 className="heading">Our Services</h1>
 
       <div className="row">
-        <div className="image">
-         { <img src={coreImg} alt="Core Features" />}
-        </div>
-
         <div className="box-container">
           <div className="box">
             <h3>
