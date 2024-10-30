@@ -1,59 +1,113 @@
-// Team.jsx
 import React from "react";
-import "../css/Team.css"; // Ensure you have appropriate styling here
-
-const teamMembers = [
-  {
-    id: 1,
-    name: "Tariq Shurmah",
-    title: "Co-Founder and Managing Director",
-    imgSrc: "images/262.png",
-  },
-  {
-    id: 2,
-    name: "Renoo Shurmah",
-    title: "Co-Founder and Project Manager",
-    imgSrc: "images/261.png",
-  },
-  {
-    id: 3,
-    name: "Lilian Mathuntuta",
-    title: "Transformation & Skills Development Senior Officer",
-    imgSrc: "images/lilan.jpg",
-  },
-  {
-    id: 4,
-    name: "Yuvesh Harry",
-    title: "Transformation Assistant",
-    imgSrc: "images/vesh.jpg",
-  },
-  {
-    id: 5,
-    name: "Sbonile Cebekhulu",
-    title: "Skills Development Administrator",
-    imgSrc: "images/spons.jpg",
-  },
-];
+import "../css/Team.css";
+import tariq from "../images/262.png";
+import renoo from "../images/261.png";
+import lillian from "../images/lilan.jpg";
+import yuvesh from "../images/vesh.jpg";
+import sibonelo from "../images/spons.jpg";
+import sudhir from "../images/Sudhir.jpg";
 
 const Team = () => {
+  const TeamMembers = [
+    {
+      name: "Tariq Shurmah",
+      role: "Co-Founder and Managing Director",
+      image: tariq,
+      socials: [
+        {
+          icon: "fa-linkedin-in",
+          link: "#",
+        },
+      ],
+    },
+    {
+      name: "Renoo Shurmah",
+      role: "Co-Founder and Project Manager",
+      image: renoo,
+      socials: [
+        {
+          icon: "fa-linkedin-in",
+          link: "#",
+        },
+      ],
+    },
+    {
+      name: "Lillian Mathunta",
+      role: "Transformation & Skills Development Senior Officer",
+      image: lillian,
+      socials: [
+        {
+          icon: "fa-linkedin-in",
+          link: "#",
+        },
+      ],
+    },
+    {
+      name: "Yuvesh Harry",
+      role: "Transformation Assistant",
+      image: yuvesh,
+      socials: [
+        {
+          icon: "fa-linkedin-in",
+          link: "#",
+        },
+      ],
+    },
+    {
+      name: "Sudhir Rugber",
+      role: "Skills Development and Project Consultant",
+      image: sudhir,
+      socials: [
+        {
+          icon: "fa-linkedin-in",
+          link: "#",
+        },
+      ],
+    },
+    {
+      name: "Sibonelo Cebekhulu",
+      role: "Skills Development Administrator",
+      image: sibonelo,
+      socials: [
+        {
+          icon: "fa-linkedin-in",
+          link: "#",
+        },
+      ],
+    },
+  ];
   return (
-    <section className="product" id="product">
-      <h1 className="heading">Our Team</h1>
-      <div className="box-container">
-        {teamMembers.map((member) => (
-          <div key={member.id} className="box">
-            <div className="image">
-              <img src={member.imgSrc} alt={member.name} />
+    <div className="wrapper">
+      <div className="title">
+        <h4>Our Team</h4>
+      </div>
+      <div className="card_Container">
+        {TeamMembers.map((member, index) => (
+          <div className="card" key={index}>
+            <div className="imbBx">
+              <img src={member.image} alt={member.name} />
             </div>
             <div className="content">
-              <h3>{member.name}</h3>
-              <p>{member.title}</p>
-              <button className="btn">Turn Card</button>
+              <div className="contentBx">
+                <h3>
+                  {member.name} <br />
+                  <span>{member.role}</span>
+                </h3>
+              </div>
+              <ul className="sci">
+                {member.socials.map((social, i) => (
+                  <li key={i} style={{ "--1": i + 1 }}>
+                    <a href={social.link}>
+                      <i className={"fa-brands ${social.icon}"}></i>
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 
