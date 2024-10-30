@@ -1,71 +1,71 @@
 // Testimonials.jsx
 import React from "react";
-import "../css/Testimonials.css"; // Import your CSS file here
+import "../css/Testimonials.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
+import { testimonials } from "../data";
 
 const Testimonials = () => {
   return (
-    <section className="features" id="features">
-      <h1 className="heading">Testimonials</h1>
-
-      <div className="box-container">
-        <div className="box">
-          <i className="fas fa-bell"></i>
-          <h3>Notification Alert</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit vel
-            repellendus necessitatibus amet doloribus aut quia ad asperiores
-            deserunt ullam!
-          </p>
-        </div>
-
-        <div className="box">
-          <i className="fas fa-comments"></i>
-          <h3>Live Chat</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit vel
-            repellendus necessitatibus amet doloribus aut quia ad asperiores
-            deserunt ullam!
-          </p>
-        </div>
-
-        <div className="box">
-          <i className="fas fa-heartbeat"></i>
-          <h3>Heart Beat Tracker</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit vel
-            repellendus necessitatibus amet doloribus aut quia ad asperiores
-            deserunt ullam!
-          </p>
-        </div>
-
-        <div className="box">
-          <i className="fas fa-map-marker-alt"></i>
-          <h3>GPS Tracker</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit vel
-            repellendus necessitatibus amet doloribus aut quia ad asperiores
-            deserunt ullam!
-          </p>
-        </div>
-
-        <div className="box">
-          <i className="fas fa-wifi"></i>
-          <h3>WiFi Facility</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit vel
-            repellendus necessitatibus amet doloribus aut quia ad asperiores
-            deserunt ullam!
-          </p>
-        </div>
-
-        <div className="box">
-          <i className="fas fa-cloud-sun"></i>
-          <h3>Weather Updates</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit vel
-            repellendus necessitatibus amet doloribus aut quia ad asperiores
-            deserunt ullam!
-          </p>
+    <section className="testimonials">
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="col-lg-5 info">
+            <h3>Testimonials</h3>
+            <p>Hear what our clients are saying about us</p>
+          </div>
+          <div className="col-lg-7">
+            <Swiper
+              modules={[Pagination, Autoplay]}
+              loop={true}
+              speed={600}
+              autoplay={{ delay: 5000 }}
+              slidesPerView="auto"
+              pagination={{
+                el: ".swiper-pagination",
+                type: "bullets",
+                clickable: true,
+              }}
+            >
+              <div className="swiper-wrapper">
+                {testimonials.map((testimonials) => (
+                  <SwiperSlide key={testimonials.name} className="swiper-slide">
+                    <div className="testimonial-item">
+                      <div className="d-flex">
+                        <img
+                          src={testimonials.src}
+                          alt=""
+                          className="testimonial-img flex-shrink-0"
+                        />
+                        <div>
+                          <h3>{testimonials.name}</h3>
+                          <h4>{testimonials.job}</h4>
+                          <div className="stars">
+                            <i className="bi bi-star-fill"></i>
+                            <i className="bi bi-star-fill"></i>
+                            <i className="bi bi-star-fill"></i>
+                            <i className="bi bi-star-fill"></i>
+                            <i className="bi bi-star-fill"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <p>
+                        <i className="bi bi-quote right-icon"></i>
+                        <span>{testimonials.comment}</span>
+                        <i className="bi bi-qoute left-icon"></i>
+                      </p>
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </div>
+              <div className="swiper-paginatio">
+                <span className="swiper-pagination-bullet"></span>
+              </div>
+            </Swiper>
+          </div>
         </div>
       </div>
     </section>

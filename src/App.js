@@ -12,6 +12,8 @@ import Testimonials from "./Components/Testimonials";
 import Team from "./Components/Team";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 function App() {
   return (
@@ -19,12 +21,12 @@ function App() {
       <div className="App">
         <Navbar />
         <HeroSection />
-        <AboutUs/>
-        <CoreFeatures/>
-        <Testimonials/>
-        <Team/>
-        <Contact/>
-        <Footer/>
+        <AboutUs />
+        <CoreFeatures />
+        <Testimonials />
+        <Team />
+        <Contact />
+        <Footer />
       </div>
     </Router>
   );
