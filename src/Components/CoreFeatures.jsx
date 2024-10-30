@@ -1,6 +1,7 @@
 // CoreFeatures.jsx
 import React from "react";
 import "../css/CoreFeatures.css"; // Import CSS file for styling
+import coreImg from "../images/core_img.jpg";
 
 const CoreFeatures = () => {
   return (
@@ -9,7 +10,7 @@ const CoreFeatures = () => {
 
       <div className="row">
         <div className="image">
-          <img src="images/core-img.png" alt="Core Features" />
+         { <img src={coreImg} alt="Core Features" />}
         </div>
 
         <div className="box-container">

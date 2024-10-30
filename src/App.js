@@ -7,6 +7,11 @@ import Navbar from "./Components/Navbar";
 import HeroSection from "./Components/HeroSection";
 import AboutUs from "./Components/AboutUs";
 import MainPage from "./Components/MainPage";
+import CoreFeatures from "./Components/CoreFeatures";
+import Testimonials from "./Components/Testimonials";
+import Team from "./Components/Team";
+import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -15,6 +20,11 @@ function App() {
         <Navbar />
         <HeroSection />
         <AboutUs/>
+        <CoreFeatures/>
+        <Testimonials/>
+        <Team/>
+        <Contact/>
+        <Footer/>
       </div>
     </Router>
   );
