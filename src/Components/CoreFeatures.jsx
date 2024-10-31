@@ -15,16 +15,21 @@ const CoreFeatures = () => {
               <i className="fas fa-user"></i> B-BBEE Advisory & Consulting
             </h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi fugiat exercitationem quasi natus aliquid consequuntur, consectetur rerum molestiae optio doloremque.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+              fugiat exercitationem quasi natus aliquid consequuntur,
+              consectetur rerum molestiae optio doloremque.
             </p>
           </div>
 
           <div className="box">
             <h3>
-              <i className="fas fa-shield-alt"></i> Human Resource (HR) Consulting
+              <i className="fas fa-shield-alt"></i> Human Resource (HR)
+              Consulting
             </h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi fugiat exercitationem quasi natus aliquid consequuntur, consectetur rerum molestiae optio doloremque.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+              fugiat exercitationem quasi natus aliquid consequuntur,
+              consectetur rerum molestiae optio doloremque.
             </p>
           </div>
 
@@ -33,7 +38,9 @@ const CoreFeatures = () => {
               <i className="fas fa-sync-alt"></i> Skills Development
             </h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi fugiat exercitationem quasi natus aliquid consequuntur, consectetur rerum molestiae optio doloremque.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+              fugiat exercitationem quasi natus aliquid consequuntur,
+              consectetur rerum molestiae optio doloremque.
             </p>
           </div>
         </div>
