@@ -11,12 +11,30 @@ body {
   background-color: #f1f1f1;
 }
 .about-section {
-  background: url(../images/core_img.jpg) no-repeat left;
+  background: url(../images/BBBEE.jpg) no-repeat left;
   background-color: #fdfdfd;
   background-size: 55%;
   overflow: hidden;
   padding: 100px 0;
 }
+.why-us-overlay {
+  top: 20px;
+  left: 0;
+  width: 100%;
+  color: #000;
+  padding: 20px;
+}
+.why-us-overlay h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.why-us-overlay .why-us-text {
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
 .inner-container {
   width: 55%;
   float: right;
@@ -54,23 +72,23 @@ body {
 
 @media screen and (max-width: 1200px) {
   .inner-container {
-      padding: 80px;
+    padding: 80px;
   }
 }
 @media screen and (max-width: 1000px) {
   .about-section {
-      background-size: 100%;
-      padding: 100px 40px;
+    background-size: 100%;
+    padding: 100px 40px;
   }
   .inner-container {
-      width: 100%;
+    width: 100%;
   }
 }
 @media screen and (max-width: 600px) {
   .about-section {
-      padding: 0px;
+    padding: 0px;
   }
   .inner-container {
-      padding: 60px;
+    padding: 60px;
   }
 }

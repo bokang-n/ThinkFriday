@@ -1,22 +1,25 @@
-import React, {useState} from "react";
-import { GoogleLogin } from "@react-oauth/google";
-import "../css/Navbar.css";
+// HeroSection.jsx
+import React from "react";
 import "../css/HeroSection.css";
-import banner from '../images/banner.png';
+import banner from "../images/blackwallpaper.jpg";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
-    <section className="home" id="home">
-      {<img src={banner} alt="Banner Image"/>}
-      <div className="content">
-        <h1>Conceptualizing, Designing, & Delivering Excellence</h1>
-        <p>
-          We are a Business Consulting Organisation that provides end-to-end \
-          Business Strategies, Advisory, and Consulting.
-        </p>
+    <section id="hero">
+      <div className="container">
+        <div className="hero-box">
+          <h1 className="hero-heading">
+            Conceptualize, Design, & Deliver Excellence
+          </h1>
+          <p className="hero-desc">This is the hero section paragraph.</p>
+          <Link to="/Blog">
+            <button className="read-more-btn">Read More</button>
+          </Link>
+        </div>
       </div>
-      <a href="#about" className="btn btn-primary">Read More</a>
     </section>
   );
 };
+
 export default HeroSection;

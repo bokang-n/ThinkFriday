@@ -9,10 +9,14 @@
   position: relative; /* Allows navbar to sit on top */
   z-index: 10; /* Ensure navbar stays above other content */
 }
-
 .navbar-logo {
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.navbar-logo img {
+  height: 50px; /* Adjust this size as needed */
+  width: auto; /* Keeps the aspect ratio */
 }
 
 .navbar-links a {

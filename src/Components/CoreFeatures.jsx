@@ -15,9 +15,12 @@ const CoreFeatures = () => {
               <i className="fas fa-user"></i> B-BBEE Advisory & Consulting
             </h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-              fugiat exercitationem quasi natus aliquid consequuntur,
-              consectetur rerum molestiae optio doloremque.
+              We assist clients to achieve their desired level of B-BBEE
+              compliance in the most efficient and cost-effective manner with
+              the least disruption to their business. We provode comprehensive
+              services to support our client's business by leveraging
+              strategies, legislation, and best practice to ensure Growth and
+              Return on Investemnt (ROI).
             </p>
           </div>
 
@@ -27,9 +30,11 @@ const CoreFeatures = () => {
               Consulting
             </h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-              fugiat exercitationem quasi natus aliquid consequuntur,
-              consectetur rerum molestiae optio doloremque.
+              We provide Human Resources (HR) Consulting services that form an
+              integral asset to our client's HR team. By creating and
+              implementing bespoke HR strategies, we work to ensure the
+              organisation is effectively utilizing its personnel to achieve its
+              goals, while working at optimal performance and efficiency levels.
             </p>
           </div>
 
@@ -38,9 +43,11 @@ const CoreFeatures = () => {
               <i className="fas fa-sync-alt"></i> Skills Development
             </h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-              fugiat exercitationem quasi natus aliquid consequuntur,
-              consectetur rerum molestiae optio doloremque.
+              We provide Skills Development Consulting services that are
+              designed to maximize the effect of B-BBEE Strategies within our
+              client's organisation. We align training and development to
+              strategic business objectives and ensure increased Return on
+              Investment (ROI) in training initiatives.
             </p>
           </div>
         </div>

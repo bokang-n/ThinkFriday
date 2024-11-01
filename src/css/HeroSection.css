@@ -1,89 +1,65 @@
-/* Hero section styling */
-.home {
-  position: relative;
+/* HeroSection.css */
+
+#hero {
+  width: 100%;
+  height: 805px;
+  background: url("../images/blackwallpaper.jpg") center no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 600px;
-  background: #000; /* Fallback color in case the image fails to load */
-  color: #fff;
+  padding-top: 32px;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.hero-box {
   text-align: center;
-  overflow: hidden;
-}
-
-.home img {
-  width: 100%;
-  height: auto;
-  max-height: 600px;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-/* Overlay for better text readability */
-.home::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
-  z-index: 2;
-}
-
-/* Content container */
-.content {
-  position: relative;
-  z-index: 3;
-  max-width: 800px;
-  padding: 20px;
   color: #fff;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-/* Main headline styling */
-.content h1 {
+.hero-heading {
   font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-  line-height: 1.2;
+  margin-bottom: 1rem;
 }
 
-/* Subtitle styling */
-.content p {
+.hero-desc {
   font-size: 1.2rem;
-  margin-bottom: 30px;
-  line-height: 1.6;
+  line-height: 1.5;
+  margin-bottom: 2rem;
 }
 
-/* Button styling */
-.btn {
-  display: inline-block;
-  padding: 12px 24px;
+.btn-box {
+  margin-top: 1.5rem;
+}
+
+.cta-btn {
+  background: #fff;
+  color: #2e2c2c;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
   font-size: 1rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #ddd;
+}
+.hero .read-more-btn {
+  background-color: #007bff;
   color: #fff;
-  background: #ff6347; /* Button color */
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
   text-decoration: none;
-  transition: background 0.3s;
-  z-index: 3; /* Ensure button is above overlay */
-  position: relative; /* Keeps button position within content */
 }
 
-.btn:hover {
-  background: #e5533d; /* Hover effect */
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .content h1 {
-    font-size: 2.5rem;
-  }
-
-  .content p {
-    font-size: 1rem;
-  }
+.hero .read-more-btn:hover {
+  background-color: #0056b3;
 }
